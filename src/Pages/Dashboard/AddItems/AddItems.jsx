@@ -18,6 +18,7 @@ const AddItems = () => {
         console.log(data)
         //image upload to imgbb and then get an url
         const imageFile = { image: data.image[0] }
+        console.log(imageFile);
         const res = await axiosPublic.post(image_hosting_api, imageFile, {
             headers: {
                 'content-type': 'multipart/form-data'
